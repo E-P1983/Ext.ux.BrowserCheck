@@ -1,0 +1,79 @@
+.uxBrowserCheckBrowserImage {
+	border: none;
+	padding-top: 20px;
+}
+
+.uxBrowserCheckBrowserImageSubtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 10px 0 10px 0;
+}
+
+.uxBrowserCheckNotSupportedSubText {
+	font-weight: 10px;
+}
+
+.uxBrowserCheckPanelHeader {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 5px;
+}
+
+.uxBrowserCheckPanelFooter {
+	width: 100%;
+	text-align: center;
+}
+
+.uxBrowserCheckPanelCloseButton {
+	width: 185px;
+	height: 35px;
+	border: 1px none #8b8b8b;
+	background-color: #78797a;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.uxBrowserCheckPanelCloseButton:hover {
+	border: 1px none #398ee5;
+	background-color: #96c0ec;
+}
+
+.uxBrowserCheckPanelParent {
+	/* border: solid 1px #aaa; */
+	text-align: center;
+	white-space: nowrap;
+	font-size: 1em;
+	letter-spacing: 2.5em;
+	line-height: .6em;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 30px 0;
+}
+
+.uxBrowserCheckPanelElement {
+	width: 180px;
+	height: 180px;
+	border: solid 1px #ccc;
+	margin: 2px;
+	display: inline-block;
+	letter-spacing: normal;
+	font-size: normal;
+	white-space: normal;
+	text-align: normal;
+	vertical-align: middle;
+}
+
+.uxBrowserCheckPanelElement:hover {
+	background-color: #96c0ec;
+	color: white;
+	cursor: pointer;
+}
+
+.uxBrowserCheckPanelElement {
+	*display: inline;
+	*margin: 0 20px;
+}

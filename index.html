@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title> Ext.ux.BrowserCheck & Ext.ux.BrowserDetect </title>
+		<link rel="stylesheet" type="text/css" href="ext-4.0.7-gpl/resources/css/ext-all.css">
+		<link rel="stylesheet" type="text/css" href="BrowserCheck.css">
+
+		<script type="text/javascript" src="ext-4.0.7-gpl/bootstrap.js"></script>
+
+		<script type="text/javascript" src="BrowserDetect.js"></script>
+		<script type="text/javascript" src="BrowserCheck.js"></script>
+
+		<script>
+      Ext.onReady(function() {
+
+        var check = new Ext.ux.BrowserCheck({
+          redirectUrl : 'http://www.google.com',
+          browsers : [{
+            type : 'IE',
+            allowed : false
+          }, {
+            type : 'FF',
+            allowed: false
+          }, {
+            type : 'Safari', // safari is allowed except 5.1
+            versions : [{
+              '5.1' : {
+                allowed : false
+              }
+            }]
+          }],
+          alternatives : [{
+            iconUrl : 'images/browsers/IE.png',
+            name : 'Internet Explorer',
+          }, {
+            iconUrl : 'images/browsers/Chrome.png',
+            name : 'Google Chrome',
+            url : 'http://www.google.nl'
+          }, {
+            iconUrl : 'images/browsers/Firefox.png',
+            name : 'Mozilla Firefox',
+          }, {
+            iconUrl : 'images/browsers/Opera.png',
+            name : 'Opera',
+          }, {
+            iconUrl : 'images/browsers/Safari.png',
+            name : 'Safari',
+          }],
+        }).check();
+
+      });
+
+		</script>
+
+	</head>
+	<body></body>
+</html>
