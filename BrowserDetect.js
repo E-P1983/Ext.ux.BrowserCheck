@@ -13,7 +13,6 @@ Ext.define('Ext.ux.BrowserDetect', {
     this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version";
     this.OS = this.searchString(this.dataOS) || "an unknown OS";
     
-    this.callParent(arguments);
     this.initConfig(cfg);
   },
 
