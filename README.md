@@ -1,4 +1,4 @@
 Ext.ux.BrowserCheck
 ===================
 
-BrowserCheck plugin for ExtJS 4.0.7
+BrowserCheck plugin for ExtJS 4.0+ 
